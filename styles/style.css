@@ -1,0 +1,204 @@
+html {
+    display: flex;
+    height: 100%;
+  }
+  
+  body {
+    color: #585858;
+    flex: 1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+  }
+  
+  a {
+    color: #9a9a9a;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  input::placeholder {
+    color: #9a9a9a;
+    font-style: italic;
+  }
+  
+  .button {
+    padding: 25px;
+    flex: 1;
+    text-transform: uppercase;
+    color: white;
+    background: #455d7f;
+  }
+  
+  #main-wrapper {
+    display: flex;
+    min-height: 100%;
+  }
+  
+  #main-wrapper .page-side {
+    flex: 1;
+  }
+  
+  #left-side {
+    background-color: transparent;
+    background-image: url("../images/notebook.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  
+  #right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #b47144;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  .h1-underline {
+    background-color: #b47144;
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    margin-bottom: 25px;
+  }
+  
+  .description {
+    color: #cfcfcf;
+    margin-bottom: 40px;
+  }
+  
+  .side-inner {
+    padding: 50px 30px;
+    width: 350px;
+  }
+  
+  .input-wrapper {
+    background-color: #f9f9f9;
+    padding: 15px 30px;
+    margin: 40px 0;
+  }
+  
+  .input-wrapper:hover {
+    border-left: 5px solid #b47144;
+    padding-left: 25px;
+  }
+  
+  .input-wrapper label {
+    color: #b47144;
+    display: block;
+  }
+  
+  .input-wrapper input {
+    background-color: transparent;
+    border: none;
+    color: #6f6f6f;
+    margin-top: 5px;
+    outline: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .bottom-wrapper,
+  .buttons-wrapper {
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
+  }
+  
+  .bottom-wrapper .link-wrapper {
+    align-items: flex-end;
+  }
+  
+  .buttons-wrapper {
+    margin-top: 60px;
+  }
+  
+  /* The checkbox container */
+  .checkbox-wrapper {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+    font-size: 16px;
+    line-height: 27px;
+    flex: 1;
+    color: #585858;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkbox-wrapper .checkmark {
+    background-color: white;
+    border: 1px solid #b47144;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-wrapper:hover input ~ .checkmark {
+    background-color: #eee;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-wrapper input:checked ~ .checkmark {
+    background-color: #b47144;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox-wrapper .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-wrapper input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-wrapper .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #login {
+    margin-right: 35px;
+  }
+  
+  #sign-up {
+    background-color: #b47144;
+  }
+  

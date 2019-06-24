@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Register Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <link href="../styles/reset.css" rel="stylesheet" />
+  <link href="../styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Main Wrapper -->
+  <div id="main-wrapper">
+    <div id="left-side" class="page-side"></div>
+    <div id="right-side" class="page-side">
+      <div class="side-inner">
+        <h1>Welcome in our family!</h1>
+        <span class="h1-underline"></span>
+        <p class="description">Please register an Account</p>
+        <form id="login-form" class="form" action="/auth/register" method="POST">
+          <div class="input-wrapper">
+              <label for="username">
+                Username
+                <input type="text" name="username" id="usernam" placeholder="user" />
+              </label>
+            </div>
+
+          <div class="input-wrapper">
+            <label for="email">
+              Email
+              <input type="email" name="email" id="email" placeholder="info@example.com" />
+            </label>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="password">
+              Password
+              <input type="password" name="password" id="password" placeholder="Your password" />
+            </label>
+          </div>
+
+          <div class="input-wrapper">
+              <label for="repeat-password">
+                Repeat Password
+                <input type="password" name="repeat-password" id="repeat-password" placeholder="Re-type your password" />
+              </label>
+            </div>
+
+          <div class="buttons-wrapper">
+            <button type="submit" id="login" class="button">Login</button>
+            <button type="submit" id="sign-up" class="button">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

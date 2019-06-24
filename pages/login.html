@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <link href="../styles/reset.css" rel="stylesheet" />
+  <link href="../styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="main-wrapper">
+    <div id="left-side" class="page-side"></div>
+    <div id="right-side" class="page-side">
+      <div class="side-inner">
+        <h1>Welcome back!</h1>
+        <span class="h1-underline"></span>
+        <p class="description">Please login in your Account</p>
+        <form id="login-form" class="form" action="/auth/login" method="POST">
+          <div class="input-wrapper">
+            <label for="email">
+              Email
+              <input type="email" name="email" id="email" placeholder="info@example.com" />
+            </label>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="password">
+              Password
+              <input type="password" name="password" id="password" placeholder="Your password" />
+            </label>
+          </div>
+
+          <div class="bottom-wrapper">
+            <label for="remember" class="checkbox-wrapper">
+              Remember Me
+              <input type="checkbox" name="remember" id="remember" />
+              <span class="checkmark"></span>
+            </label>
+
+            <div class="link-wrapper">
+              <a href="./reset-password.html">Forgot password?</a>
+            </div>
+          </div>
+          <div class="buttons-wrapper">
+            <button type="submit" id="login" class="button">Login</button>
+            <button type="submit" id="sign-up" class="button">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
